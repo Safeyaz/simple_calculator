@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(120deg,beige,rgb(238, 162, 48));
+}
+
+.calculator {
+    text-align: center;
+    width: 300px;
+}
+
+#display {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: rgb(241, 240, 240);
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    border-radius: 10%;
+}
+
+.buttons button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid black; /* Add a black border */
+    border-radius: 10%;     /* Set border radius */
+    background-color: rgb(221, 115, 15);
+    box-sizing: border-box;  /* Include padding and border in the width calculation */
+}
